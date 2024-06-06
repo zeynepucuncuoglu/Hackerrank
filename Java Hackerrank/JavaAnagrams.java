@@ -1,3 +1,8 @@
+/*
+link:https://www.hackerrank.com/challenges/java-anagrams/problem?isFullScreen=true
+smaple inp:Anagrams
+ */ 
+
 import java.util.Scanner;
 
 public class JavaAnagrams {
