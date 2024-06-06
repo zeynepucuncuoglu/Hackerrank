@@ -1,10 +1,10 @@
-/**link:https://www.hackerrank.com/challenges/pattern-syntax-checker/problem?isFullScreen=true
- * sample inp: 
+/*link:https://www.hackerrank.com/challenges/pattern-syntax-checker/problem?isFullScreen=true
+  sample inp: 
  3
 ([A-Z])(.+)
 [AZ[a-z](a-z)
 batcatpat(nat
- * /
+ */
 
 
 import java.io.*;
