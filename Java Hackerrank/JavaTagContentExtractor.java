@@ -9,24 +9,26 @@ import java.math.*;
 import java.util.regex.*;
 
 public class  JavaTagContentExtractor{
-	public static void main(String[] args){
-		
-		Scanner in = new Scanner(System.in);
-		int testCases = Integer.parseInt(in.nextLine());
+	public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int testCases = Integer.parseInt(in.nextLine());
         String regex = "<(.+?)>([^<>]+)</\\1>";
        
         Pattern pattern = Pattern.compile(regex);
 
-		while(testCases>0){
-			String line = in.nextLine();	
-          	Matcher matcher = pattern.matcher(line);
-       
-			if(matcher.find()){
+        while (testCases > 0) {
+            String line = in.nextLine();
+            Matcher matcher = pattern.matcher(line);
+          
+            boolean found = false;
+            while (matcher.find()) {
                 System.out.println(matcher.group(2));
-            }else{
+                found = true;
+            }
+            if (!found) {
                 System.out.println("None");
             }
-			testCases--;
-		}
-	}
+            testCases--;
+        }
+    }
 }
