@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/java-negative-subarray/problem?isFullScreen=true
 import java.util.Scanner;
 
 public class JavaSubarray {
